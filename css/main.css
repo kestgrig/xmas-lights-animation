@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Metal Font';
+    src: url(../img/Metal.ttf);
+}
+
+
+body {
+    background-color: rgba(248, 13, 13, 0.723);
+}
+
+
+img {
+    width: 300px;
+    display: flex;
+    height: 300px;
+    margin-left: 300px;
+}
+
+.merryXmas {
+    margin-top: -200px;
+    font-family:'Metal Font';
+    margin-left: 700px;
+    position: absolute;
+    font-size: 70px;
+    
+}
+
+.xmas {
+    display: flex;
+    position: fixed;
+    height: 50%;
+    width: 90%;
+    margin: 10px 50px;
+    
+    
+}
+
+.xmas > div {
+    height: 90%;
+    width: 90%;
+    animation-name: marry;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(0);
+}
+
+.bubble {
+    border:2px dashed black;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.first {
+    display: flex;
+    margin-top: -300px;
+}
+
+.second {
+    display: flex;
+    margin-top: -200px;
+}
+
+.third {
+    display: flex;
+    margin-top: -100px;
+}
+
+.fourth {
+    display: flex;
+    margin-top: -50px;
+}
+
+.fifth {
+    display: flex;
+    margin-top: 0px;
+}
+
+.sixth {
+    display: flex;
+    margin-top: 50px;
+}
+
+
+
+.xmas > div:nth-child(4n+1) {
+    animation-delay: -1s;
+}
+
+.xmas > div:nth-child(4n+2) {
+    animation-delay: -2.5s;
+}
+
+.xmas > div:nth-child(4n+3) {
+    animation-delay: -3.75s;
+}
+
+.xmas>div:nth-child(4n) {
+    animation-delay: -5s;
+}
+
+@keyframes marry {
+    0% {
+        background-color: red;
+    }
+        
+    25% {
+        background-color: green;
+    }
+    
+    50% {
+        background-color: rgba(16, 32, 244, 0.969);
+    }
+
+    75% {
+        background-color: yellow;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
